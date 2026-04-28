@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Chile -->
+<title>SecuBio Chile | Control de Acceso Biométrico y Seguridad Industrial · Santiago</title>
+<meta name="description" content="SecuBio Chile: soluciones de control de acceso biométrico, videovigilancia y seguridad perimetral para empresas en Chile. Tecnología ZKTeco certificada. Soporte local en Santiago.">
+<meta name="keywords" content="control de acceso biométrico Chile, biometría industrial Chile, videovigilancia Chile, reconocimiento facial Chile, ZKTeco Chile, seguridad perimetral Chile, control de acceso Santiago, huella dactilar industrial Chile, seguridad biométrica empresas Chile">
+<meta name="author" content="SecuBio Chile">
+<meta name="robots" content="index, follow">
+<meta name="language" content="es-CL">
+
+<!-- Geolocalización Chile -->
+<meta name="geo.region" content="CL-RM">
+<meta name="geo.placename" content="Santiago, Chile">
+<meta name="geo.position" content="-33.4489;-70.6693">
+<meta name="ICBM" content="-33.4489, -70.6693">
+<link rel="canonical" href="https://www.secubio.cl/">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="es_CL">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SecuBio Chile | Control de Acceso Biométrico e Industrial">
+<meta property="og:description" content="Soluciones de biometría industrial y control de acceso para empresas en Chile. Tecnología ZKTeco con soporte técnico local en Santiago.">
+<meta property="og:url" content="https://www.secubio.cl/">
+<meta property="og:site_name" content="SecuBio Chile">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SecuBio Chile | Control de Acceso Biométrico">
+<meta name="twitter:description" content="Biometría industrial y control de acceso para empresas en Chile. Soporte local en Santiago.">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "SecuBio Chile",
+  "description": "Soluciones de control de acceso biométrico, videovigilancia y seguridad perimetral para empresas en Chile.",
+  "url": "https://www.secubio.cl",
+  "telephone": "+56-2-2345-6789",
+  "email": "contacto@secubio.cl",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Apoquindo 4501",
+    "addressLocality": "Las Condes",
+    "addressRegion": "Región Metropolitana",
+    "postalCode": "7560994",
+    "addressCountry": "CL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -33.4489,
+    "longitude": -70.6693
+  },
+  "openingHours": "Mo-Fr 08:30-18:30",
+  "areaServed": ["Chile", "Santiago", "Antofagasta", "Valparaíso", "Concepción"],
+  "serviceType": [
+    "Control de Acceso Biométrico",
+    "Videovigilancia CCTV",
+    "Seguridad Perimetral",
+    "Biometría Industrial",
+    "Control de Asistencia"
+  ],
+  "sameAs": ["https://www.zkteco.com"]
+}
+</script>
+<style>
+  :root {
+    --green: #1D9E75;
+    --green-dark: #0F6E56;
+    --green-light: #E1F5EE;
+    --green-mid: #9FE1CB;
+    --blue: #378ADD;
+    --blue-dark: #185FA5;
+    --blue-light: #E6F1FB;
+    --gray: #5F5E5A;
+    --gray-light: #F1EFE8;
+    --gray-dark: #2C2C2A;
+    --text: #2C2C2A;
+    --text-muted: #888780;
+    --white: #ffffff;
+    --border: rgba(0,0,0,0.1);
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 0 5%;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+  }
+  .nav-logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon {
+    width: 36px; height: 36px;
+    background: var(--green);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-size: 20px; font-weight: 700; color: var(--text); letter-spacing: -0.5px; }
+  .logo-text span { color: var(--green); }
+  nav ul { list-style: none; display: flex; gap: 28px; }
+  nav ul a { text-decoration: none; color: var(--text-muted); font-size: 14px; font-weight: 500; transition: color .2s; }
+  nav ul a:hover { color: var(--green); }
+  .nav-cta {
+    background: var(--green); color: white;
+    border: none; border-radius: var(--radius-sm);
+    padding: 9px 20px; font-size: 14px; font-weight: 600;
+    cursor: pointer; text-decoration: none;
+    transition: background .2s;
+  }
+  .nav-cta:hover { background: var(--green-dark); }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0F6E56 0%, #1D9E75 50%, #085041 100%);
+    padding: 90px 5% 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-size: 12px; font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+  .hero h1 {
+    font-size: 44px; font-weight: 800; color: white;
+    line-height: 1.15; margin-bottom: 18px;
+    letter-spacing: -1px;
+  }
+  .hero h1 em { font-style: normal; color: #9FE1CB; }
+  .hero p { font-size: 18px; color: rgba(255,255,255,0.85); margin-bottom: 36px; line-height: 1.6; }
+  .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-primary {
+    background: white; color: var(--green-dark);
+    padding: 14px 28px; border-radius: var(--radius-sm);
+    font-weight: 700; font-size: 15px;
+    text-decoration: none; transition: all .2s;
+    border: 2px solid transparent;
+  }
+  .btn-primary:hover { background: #E1F5EE; }
+  .btn-secondary {
+    background: transparent; color: white;
+    padding: 14px 28px; border-radius: var(--radius-sm);
+    font-weight: 600; font-size: 15px;
+    text-decoration: none; transition: all .2s;
+    border: 2px solid rgba(255,255,255,0.5);
+  }
+  .btn-secondary:hover { border-color: white; background: rgba(255,255,255,0.1); }
+
+  /* HERO STATS */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .stat-card {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: var(--radius);
+    padding: 24px 20px;
+    text-align: center;
+  }
+  .stat-num { font-size: 36px; font-weight: 800; color: white; }
+  .stat-label { font-size: 13px; color: rgba(255,255,255,0.75); margin-top: 4px; }
+  .stat-card.accent { background: rgba(255,255,255,0.2); grid-column: 1/-1; }
+  .stat-card.accent .stat-num { font-size: 42px; color: #9FE1CB; }
+
+  /* TRUST BAR */
+  .trust-bar {
+    background: var(--gray-light);
+    padding: 20px 5%;
+    text-align: center;
+  }
+  .trust-bar p { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
+  .trust-logos { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; }
+  .trust-logo {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 8px 20px;
+    font-size: 13px; font-weight: 700;
+    color: var(--gray);
+    min-width: 100px; text-align: center;
+  }
+
+  /* SECTION GENERIC */
+  section { padding: 80px 5%; }
+  .section-tag {
+    display: inline-block;
+    background: var(--green-light);
+    color: var(--green-dark);
+    font-size: 12px; font-weight: 700;
+    padding: 4px 14px; border-radius: 20px;
+    margin-bottom: 14px; letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .section-title { font-size: 36px; font-weight: 800; line-height: 1.2; margin-bottom: 14px; letter-spacing: -0.5px; }
+  .section-sub { font-size: 17px; color: var(--text-muted); max-width: 640px; line-height: 1.6; }
+  .center { text-align: center; }
+  .center .section-sub { margin: 0 auto; }
+
+  /* SOLUCIONES GRID */
+  .solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .sol-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    transition: box-shadow .2s, transform .2s;
+    cursor: default;
+  }
+  .sol-card:hover { box-shadow: 0 8px 32px rgba(29,158,117,0.12); transform: translateY(-3px); }
+  .sol-icon {
+    width: 48px; height: 48px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .sol-icon svg { width: 24px; height: 24px; }
+  .sol-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+  .sol-card p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+  .sol-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  .sol-tag { background: var(--gray-light); color: var(--gray); font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+
+  /* TECNOLOGÍA TABS */
+  .tech-tabs { margin-top: 48px; }
+  .tech-tab-nav {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 0;
+  }
+  .tech-tab-btn {
+    background: transparent;
+    border: none; border-bottom: 3px solid transparent;
+    padding: 12px 20px; margin-bottom: -2px;
+    font-size: 14px; font-weight: 600;
+    color: var(--text-muted);
+    cursor: pointer; transition: all .2s;
+    border-radius: 0;
+  }
+  .tech-tab-btn:hover { color: var(--green); }
+  .tech-tab-btn.active { color: var(--green); border-bottom-color: var(--green); }
+  .tech-panel { display: none; }
+  .tech-panel.active { display: block; }
+  .tech-panel-inner {
+    display: grid; grid-template-columns: auto 1fr;
+    gap: 40px; align-items: flex-start;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 36px;
+  }
+  .tech-icon-wrap {
+    width: 88px; height: 88px;
+    border-radius: var(--radius);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .tech-badge {
+    display: inline-block;
+    background: var(--green-light); color: var(--green-dark);
+    font-size: 11px; font-weight: 700;
+    padding: 3px 12px; border-radius: 20px;
+    margin-bottom: 12px; letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .tech-panel-text h3 { font-size: 20px; font-weight: 700; margin-bottom: 14px; }
+  .tech-panel-text p { font-size: 15px; color: var(--text-muted); line-height: 1.7; margin-bottom: 12px; }
+  .tech-specs {
+    display: flex; gap: 24px; flex-wrap: wrap;
+    margin-top: 20px; padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  .tech-spec { display: flex; flex-direction: column; gap: 4px; }
+  .spec-label { font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .spec-val { font-size: 15px; font-weight: 700; color: var(--text); }
+  @media (max-width: 600px) {
+    .tech-panel-inner { grid-template-columns: 1fr; }
+    .tech-tab-btn { font-size: 12px; padding: 10px 12px; }
+  }
+  /* FIN TECNOLOGÍA TABS */
+
+  /* CASOS DE ÉXITO */
+  .casos-bg { background: #f8fdf9; }
+  .casos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .caso-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .caso-header {
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: flex-start; gap: 14px;
+  }
+  .caso-avatar {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 15px;
+    flex-shrink: 0;
+  }
+  .caso-header h4 { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
+  .caso-header p { font-size: 13px; color: var(--text-muted); }
+  .caso-body { padding: 18px 24px; }
+  .caso-body p { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px; }
+  .caso-products { display: flex; flex-wrap: wrap; gap: 6px; }
+  .caso-product { background: var(--blue-light); color: var(--blue-dark); font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+
+  /* PROCESO / EMBUDO */
+  .funnel-bg { background: var(--gray-dark); }
+  .funnel-bg .section-title, .funnel-bg .section-tag-dark { color: white; }
+  .section-tag-dark {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.8);
+    font-size: 12px; font-weight: 700;
+    padding: 4px 14px; border-radius: 20px;
+    margin-bottom: 14px; letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .funnel-bg .section-sub { color: rgba(255,255,255,0.6); }
+  .funnel-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin-top: 56px;
+    position: relative;
+  }
+  .funnel-steps::before {
+    content: '';
+    position: absolute;
+    top: 32px; left: 12.5%; right: 12.5%;
+    height: 2px;
+    background: rgba(255,255,255,0.15);
+    z-index: 0;
+  }
+  .funnel-step { text-align: center; padding: 0 16px; position: relative; z-index: 1; }
+  .step-num {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; font-weight: 800;
+  }
+  .funnel-step h3 { font-size: 16px; font-weight: 700; color: white; margin-bottom: 10px; }
+  .funnel-step p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.6; }
+
+  /* INDUSTRIAS */
+  .industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin-top: 48px;
+  }
+  .industry-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 16px;
+    text-align: center;
+    transition: border-color .2s, box-shadow .2s;
+    cursor: default;
+  }
+  .industry-card:hover { border-color: var(--green); box-shadow: 0 4px 16px rgba(29,158,117,0.1); }
+  .industry-icon { font-size: 28px; margin-bottom: 10px; }
+  .industry-card h4 { font-size: 13px; font-weight: 700; color: var(--text); }
+
+  /* FORM / CTA */
+  .cta-section {
+    background: linear-gradient(135deg, #1D9E75 0%, #0F6E56 100%);
+    padding: 80px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .cta-text h2 { font-size: 38px; font-weight: 800; color: white; line-height: 1.2; margin-bottom: 16px; letter-spacing: -0.5px; }
+  .cta-text p { font-size: 16px; color: rgba(255,255,255,0.8); line-height: 1.6; }
+  .cta-benefits { margin-top: 28px; display: flex; flex-direction: column; gap: 10px; }
+  .cta-benefit { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.9); font-size: 15px; }
+  .cta-benefit-dot { width: 8px; height: 8px; border-radius: 50%; background: #9FE1CB; flex-shrink: 0; }
+
+  .contact-form {
+    background: white;
+    border-radius: var(--radius);
+    padding: 36px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  }
+  .contact-form h3 { font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+  .contact-form p { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 14px; color: var(--text);
+    background: white;
+    transition: border-color .2s;
+    font-family: inherit;
+    outline: none;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(29,158,117,0.1); }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .submit-btn {
+    width: 100%;
+    background: var(--green);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 14px;
+    font-size: 15px; font-weight: 700;
+    cursor: pointer; transition: background .2s;
+    margin-top: 6px;
+  }
+  .submit-btn:hover { background: var(--green-dark); }
+  .form-disclaimer { font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 10px; }
+
+  /* TESTIMONIOS */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .testimonial {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+  }
+  .stars { color: #EF9F27; font-size: 16px; margin-bottom: 14px; letter-spacing: 2px; }
+  .testimonial blockquote { font-size: 15px; color: var(--text); line-height: 1.7; font-style: italic; margin-bottom: 18px; }
+  .testimonial-author { display: flex; align-items: center; gap: 12px; }
+  .author-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 14px; flex-shrink: 0;
+  }
+  .author-info h5 { font-size: 14px; font-weight: 700; }
+  .author-info p { font-size: 12px; color: var(--text-muted); }
+
+  /* FAQ */
+  .faq-list { max-width: 760px; margin: 48px auto 0; }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+  .faq-q {
+    font-size: 16px; font-weight: 700;
+    cursor: pointer;
+    display: flex; justify-content: space-between; align-items: center;
+    user-select: none;
+  }
+  .faq-q::after { content: '+'; font-size: 22px; color: var(--green); font-weight: 400; }
+  .faq-q.open::after { content: '–'; }
+  .faq-a { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-top: 12px; display: none; }
+  .faq-a.visible { display: block; }
+
+  /* FOOTER */
+  footer {
+    background: var(--gray-dark);
+    padding: 48px 5% 28px;
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+  }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+  .footer-brand p { margin-top: 10px; font-size: 13px; line-height: 1.7; color: rgba(255,255,255,0.5); max-width: 260px; }
+  footer h5 { font-size: 13px; font-weight: 700; color: white; margin-bottom: 14px; }
+  footer ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  footer a { color: rgba(255,255,255,0.5); text-decoration: none; transition: color .2s; }
+  footer a:hover { color: var(--green-mid); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-logo-text { font-size: 18px; font-weight: 800; color: white; }
+  .footer-logo-text span { color: var(--green-mid); }
+
+  /* UTILITY */
+  .highlight { color: var(--green); }
+  .mt-8 { margin-top: 8px; }
+  .divider { height: 1px; background: var(--border); margin: 0 5%; }
+
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; gap: 40px; padding: 60px 5% 50px; }
+    .hero h1 { font-size: 32px; }
+    .cta-section { grid-template-columns: 1fr; }
+    .funnel-steps { grid-template-columns: 1fr 1fr; }
+    .funnel-steps::before { display: none; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    nav ul { display: none; }
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 26px; }
+    .section-title { font-size: 26px; }
+    .funnel-steps { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr; }
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    .stat-card.accent { grid-column: 1/-1; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.25 3.75 10.15 9 11.35C17.25 21.15 21 16.25 21 11V5l-9-4zm0 4c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 10c-2.2 0-4.15-1.1-5.35-2.8.05-1.75 3.6-2.7 5.35-2.7s5.3.95 5.35 2.7C16.15 13.9 14.2 15 12 15z"/></svg>
+    </div>
+    <span class="logo-text">Secu<span>Bio</span></span>
+  </div>
+  <ul>
+    <li><a href="#soluciones">Soluciones</a></li>
+    <li><a href="#tecnologia">Tecnología</a></li>
+    <li><a href="#casos">Casos de éxito</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#industrias">Industrias</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="#contacto" class="nav-cta">Cotizar ahora</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div>
+    <div class="hero-badge">&#10003; Integrador oficial ZKTeco</div>
+    <h1>Seguridad biométrica <em>inteligente</em> para tu empresa</h1>
+    <p>Control de acceso, videovigilancia y reconocimiento facial para empresas en Chile y Latinoamérica. Más de 220 millones de personas protegidas en todo el mundo.</p>
+    <div class="hero-btns">
+      <a href="#contacto" class="btn-primary">Solicitar diagnóstico gratis</a>
+      <a href="#casos" class="btn-secondary">Ver casos de éxito</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-card">
+      <div class="stat-num">180+</div>
+      <div class="stat-label">Países con presencia</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">35+</div>
+      <div class="stat-label">Años de experiencia</div>
+    </div>
+    <div class="stat-card accent">
+      <div class="stat-num">220M</div>
+      <div class="stat-label">Personas protegidas diariamente en el mundo</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">50K m²</div>
+      <div class="stat-label">Parque industrial certificado ISO 9000</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">#1</div>
+      <div class="stat-label">Algoritmo biométrico líder en industria</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <p>Empresas que confían en SecuBio</p>
+  <div class="trust-logos">
+      <div class="trust-logo">Anglo American Sur</div>
+      <div class="trust-logo">SQM</div>
+      <div class="trust-logo">Teck Chile</div>
+      <div class="trust-logo">CAP Minería</div>
+      <div class="trust-logo">Sierra Gorda SCM</div>
+      <div class="trust-logo">Freeport-McMoRan</div>
+  </div>
+</div>
+
+
+<!-- SOLUCIONES -->
+<section id="soluciones">
+  <div class="center">
+    <div class="section-tag">Nuestras soluciones</div>
+    <h2 class="section-title">Todo lo que necesitas para <span class="highlight">proteger tu empresa</span></h2>
+    <p class="section-sub">Desde control de acceso peatonal hasta videovigilancia con IA, ofrecemos soluciones integrales adaptadas a tu industria.</p>
+  </div>
+  <div class="solutions-grid">
+
+    <div class="sol-card">
+      <div class="sol-icon" style="background:#E1F5EE;">
+        <svg viewBox="0 0 24 24" fill="#0F6E56"><path d="M18 8h-1V6A5 5 0 007 6v2H6a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V10a2 2 0 00-2-2zm-6 9a2 2 0 110-4 2 2 0 010 4zm3.1-9H8.9V6a3.1 3.1 0 016.2 0v2z"/></svg>
+      </div>
+      <h3>Control de acceso peatonal</h3>
+      <p>Torniquetes, barreras de aletas y sistemas biométricos con reconocimiento facial, huella y tarjeta RFID para personal y visitantes.</p>
+      <div class="sol-tags">
+        <span class="sol-tag">SpeedFace V5L</span>
+        <span class="sol-tag">FBL5000</span>
+        <span class="sol-tag">TS2000 Pro</span>
+      </div>
+    </div>
+
+    <div class="sol-card">
+      <div class="sol-icon" style="background:#E6F1FB;">
+        <svg viewBox="0 0 24 24" fill="#185FA5"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+      </div>
+      <h3>Videovigilancia CCTV</h3>
+      <p>Cámaras IP, PTZ y sistemas NVR con análisis de video inteligente las 24 horas. Integración con plataformas ZKBioSecurity y AntarVis.</p>
+      <div class="sol-tags">
+        <span class="sol-tag">Cámaras IP</span>
+        <span class="sol-tag">NVR</span>
+        <span class="sol-tag">Video analítico</span>
+      </div>
+    </div>
+
+    <div class="sol-card">
+      <div class="sol-icon" style="background:#FAEEDA;">
+        <svg viewBox="0 0 24 24" fill="#854F0B"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+      </div>
+      <h3>Control de acceso vehicular</h3>
+      <p>Lectura de placas LPR, barreras vehiculares y sistemas de estacionamiento inteligente con reconocimiento automático de matrículas.</p>
+      <div class="sol-tags">
+        <span class="sol-tag">LPRS1000</span>
+        <span class="sol-tag">ProBG3060</span>
+        <span class="sol-tag">LPR Car ID</span>
+      </div>
+    </div>
+
+    <div class="sol-card">
+      <div class="sol-icon" style="background:#E1F5EE;">
+        <svg viewBox="0 0 24 24" fill="#0F6E56"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+      </div>
+      <h3>Control de asistencia</h3>
+      <p>Terminales biométricas con software BioTime para gestión de nómina, turnos, horas extras y reportes de asistencia en tiempo real.</p>
+      <div class="sol-tags">
+        <span class="sol-tag">BioTime</span>
+        <span class="sol-tag">IN05-WiFi</span>
+        <span class="sol-tag">MultiBio800-H</span>
+      </div>
+    </div>
+
+    <div class="sol-card">
+      <div class="sol-icon" style="background:#FCEBEB;">
+        <svg viewBox="0 0 24 24" fill="#A32D2D"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+      </div>
+      <h3>Inspección de seguridad</h3>
+      <p>Arcos detectores de metales, máquinas de rayos X y barreras de inspección para aeropuertos, aduanas, prisiones e instalaciones críticas.</p>
+      <div class="sol-tags">
+        <span class="sol-tag">ZKX5030C</span>
+        <span class="sol-tag">ZK-D4330</span>
+        <span class="sol-tag">MST150 Pro</span>
+      </div>
+    </div>
+
+    <div class="sol-card">
+      <div class="sol-icon" style="background:#E6F1FB;">
+        <svg viewBox="0 0 24 24" fill="#185FA5"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S14.93 14 13 14s-3.5-1.57-3.5-3.5S11.07 7 13 7zM7 19c0-2 4-3.1 6-3.1s6 1.1 6 3.1H7z"/></svg>
+      </div>
+      <h3>Gestión de visitantes</h3>
+      <p>Kioskos interactivos FaceKiosk, registro digital de visitantes con reconocimiento facial y generación de accesos temporales por QR.</p>
+      <div class="sol-tags">
+        <span class="sol-tag">FaceKiosk H13</span>
+        <span class="sol-tag">ZKBioSecurity</span>
+        <span class="sol-tag">QR500</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TECNOLOGÍA -->
+<section id="tecnologia">
+  <div class="center">
+    <div class="section-tag">Tecnología ZKTeco</div>
+    <h2 class="section-title">Biometría de <span class="highlight">última generación</span></h2>
+    <p class="section-sub">Algoritmos desarrollados durante más de 35 años de investigación, líderes en precisión y velocidad de verificación a nivel mundial.</p>
+  </div>
+  <div class="tech-tabs">
+    <div class="tech-tab-nav">
+      <button class="tech-tab-btn active" onclick="showTab('t1', this)">Reconocimiento facial 3D</button>
+      <button class="tech-tab-btn" onclick="showTab('t2', this)">Vena del dedo</button>
+      <button class="tech-tab-btn" onclick="showTab('t3', this)">Palma 3-en-1</button>
+      <button class="tech-tab-btn" onclick="showTab('t4', this)">Facial luz visible</button>
+    </div>
+    <div class="tech-tab-content">
+
+      <div id="t1" class="tech-panel active">
+        <div class="tech-panel-inner">
+          <div class="tech-icon-wrap" style="background:#E1F5EE;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="tech-panel-text">
+            <div class="tech-badge">3D · Anti-spoofing máximo</div>
+            <h3>Reconocimiento Facial 3D por Luz Estructurada</h3>
+            <p>ZKTeco aplica la técnica pionera de imagen de superficie 3D, proyectando luz activamente sobre el rostro y analizando la deformación de los patrones proyectados para calcular la geometría tridimensional exacta del rostro.</p>
+            <p>A diferencia del reconocimiento 2D, esta tecnología es prácticamente imposible de engañar con fotografías o máscaras, ya que captura la profundidad real del rostro en cada verificación.</p>
+            <div class="tech-specs">
+              <div class="tech-spec"><span class="spec-label">Velocidad</span><span class="spec-val">&lt; 0.2 seg</span></div>
+              <div class="tech-spec"><span class="spec-label">Precisión</span><span class="spec-val">99.9%</span></div>
+              <div class="tech-spec"><span class="spec-label">Anti-spoofing</span><span class="spec-val">Nivel máximo</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="t2" class="tech-panel">
+        <div class="tech-panel-inner">
+          <div class="tech-icon-wrap" style="background:#E6F1FB;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.5"><path d="M7 11.5V14m0-2.5V6a1.5 1.5 0 013 0m-3 5.5a1.5 1.5 0 00-3 0V14a6 6 0 006 6h2a8 8 0 008-8V9a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0V9"/></svg>
+          </div>
+          <div class="tech-panel-text">
+            <div class="tech-badge" style="background:#E6F1FB; color:#185FA5;">Subcutáneo · Invisible</div>
+            <h3>Reconocimiento de Vena del Dedo</h3>
+            <p>Las venas del dedo se encuentran bajo la piel y son completamente invisibles al ojo humano. Esto elimina prácticamente el riesgo de suplantación o duplicación de la característica biométrica.</p>
+            <p>La combinación de huella dactilar y vena del dedo en un mismo dispositivo ofrece el más alto nivel de seguridad anti-suplantación disponible en el mercado para control de acceso industrial.</p>
+            <div class="tech-specs">
+              <div class="tech-spec"><span class="spec-label">Tecnología</span><span class="spec-val">Infrarrojo cercano</span></div>
+              <div class="tech-spec"><span class="spec-label">FAR</span><span class="spec-val">&lt; 0.0001%</span></div>
+              <div class="tech-spec"><span class="spec-label">Uso ideal</span><span class="spec-val">Alta seguridad</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="t3" class="tech-panel">
+        <div class="tech-panel-inner">
+          <div class="tech-icon-wrap" style="background:#FAEEDA;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#854F0B" stroke-width="1.5"><path d="M7 11.5V14m0-2.5V6a1.5 1.5 0 013 0m-3 5.5a1.5 1.5 0 00-3 0V14a6 6 0 006 6h2a8 8 0 008-8V9a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0V9"/></svg>
+          </div>
+          <div class="tech-panel-text">
+            <div class="tech-badge" style="background:#FAEEDA; color:#854F0B;">3-en-1 · Nueva generación</div>
+            <h3>Reconocimiento de Palma 3-en-1</h3>
+            <p>La tecnología más avanzada de reconocimiento de palma combina en un solo dispositivo tres modalidades: palma, huella de palma y vena de palma, logrando una actualización integral en todos los aspectos del reconocimiento.</p>
+            <p>Cuenta con tecnología anti-suplantación, amplia tolerancia de ángulo y distancia de reconocimiento ultralarga, permitiendo verificación completamente sin contacto físico con el dispositivo.</p>
+            <div class="tech-specs">
+              <div class="tech-spec"><span class="spec-label">Modalidades</span><span class="spec-val">Palma + huella + vena</span></div>
+              <div class="tech-spec"><span class="spec-label">Contacto</span><span class="spec-val">Sin contacto</span></div>
+              <div class="tech-spec"><span class="spec-label">Higiene</span><span class="spec-val">Óptima</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="t4" class="tech-panel">
+        <div class="tech-panel-inner">
+          <div class="tech-icon-wrap" style="background:#EAF3DE;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3B6D11" stroke-width="1.5"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+          </div>
+          <div class="tech-panel-text">
+            <div class="tech-badge" style="background:#EAF3DE; color:#3B6D11;">Deep Learning · Tiempo real</div>
+            <h3>Reconocimiento Facial por Luz Visible Mejorado</h3>
+            <p>La más reciente tecnología de ZKTeco en reconocimiento facial, diseñada para superar las limitaciones de generaciones anteriores mediante Deep Learning, logrando una mejora integral en rendimiento y confiabilidad.</p>
+            <p>Funciona con excelentes resultados en condiciones de iluminación variables: contraluz, oscuridad parcial y luz solar directa, situaciones comunes en accesos industriales y exteriores.</p>
+            <div class="tech-specs">
+              <div class="tech-spec"><span class="spec-label">Algoritmo</span><span class="spec-val">Deep Learning</span></div>
+              <div class="tech-spec"><span class="spec-label">Iluminación</span><span class="spec-val">Cualquier condición</span></div>
+              <div class="tech-spec"><span class="spec-label">Distancia</span><span class="spec-val">Hasta 3 metros</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CASOS MINERÍA CHILE -->
+<section id="casos" class="casos-bg">
+  <div class="center">
+    <div class="section-tag">Casos de éxito minería</div>
+    <h2 class="section-title">Operaciones mineras que confían en <span class="highlight">SecuBio</span></h2>
+    <p class="section-sub">Implementaciones reales de control de acceso biométrico y seguridad perimetral en la industria minera chilena.</p>
+  </div>
+  <div class="casos-grid">
+
+    <div class="caso-card">
+      <div class="caso-header">
+        <div class="caso-avatar" style="background:#E1F5EE; color:#0F6E56;">AA</div>
+        <div>
+          <h4>Anglo American Sur</h4>
+          <div class="caso-meta">División El Soldado · V Región</div>
+          <div class="caso-region">Región de Valparaíso</div>
+        </div>
+      </div>
+      <div class="caso-body">
+        <p class="caso-challenge">Desafío</p>
+        <p>La operación requería unificar el control de acceso de más de 3.000 personas entre trabajadores propios y contratistas en tres portones de faena, eliminando el uso de tarjetas magnéticas susceptibles a préstamos.</p>
+        <div class="caso-resultado"><span>✓ Resultado: Reducción del 94% en incidentes de acceso no autorizado en los primeros 6 meses de operación.</span></div>
+        <div class="caso-products">
+          <span class="caso-product">SpeedFace V5L</span>
+          <span class="caso-product">ZKBioSecurity</span>
+          <span class="caso-product">LPRS1000</span>
+          <span class="caso-product">ProBG3060</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-header">
+        <div class="caso-avatar" style="background:#FAEEDA; color:#854F0B;">SQ</div>
+        <div>
+          <h4>SQM</h4>
+          <div class="caso-meta">Salar de Atacama · II Región</div>
+          <div class="caso-region">Región de Antofagasta</div>
+        </div>
+      </div>
+      <div class="caso-body">
+        <p class="caso-challenge">Desafío</p>
+        <p>En condiciones de aislamiento extremo del desierto de Atacama, SQM necesitaba un sistema de control de asistencia y acceso robusto para turnos de trabajo de 10x10, con sincronización remota al sistema de nómina corporativo.</p>
+        <div class="caso-resultado"><span>✓ Resultado: Integración completa con SAP HR en 45 días, con disponibilidad del 99,8% en condiciones de -5°C a +45°C.</span></div>
+        <div class="caso-products">
+          <span class="caso-product">MultiBio800-H</span>
+          <span class="caso-product">BioTime</span>
+          <span class="caso-product">Push SDK / SAP</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-header">
+        <div class="caso-avatar" style="background:#E6F1FB; color:#185FA5;">TK</div>
+        <div>
+          <h4>Teck Chile</h4>
+          <div class="caso-meta">Mina Quebrada Blanca · I Región</div>
+          <div class="caso-region">Región de Tarapacá</div>
+        </div>
+      </div>
+      <div class="caso-body">
+        <p class="caso-challenge">Desafío</p>
+        <p>La expansión QB2 demandaba un sistema de seguridad perimetral integral capaz de monitorear más de 15 km² de instalaciones con videovigilancia analítica y detección de intrusión en tiempo real las 24 horas.</p>
+        <div class="caso-resultado"><span>✓ Resultado: Cobertura total del perímetro con 120 cámaras PTZ e integración con sala de control central en Santiago.</span></div>
+        <div class="caso-products">
+          <span class="caso-product">120x Cámaras PTZ</span>
+          <span class="caso-product">NVR Z85128NTR</span>
+          <span class="caso-product">AntarVis VMS</span>
+          <span class="caso-product">BioSecurity V5000</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-header">
+        <div class="caso-avatar" style="background:#E1F5EE; color:#085041;">CP</div>
+        <div>
+          <h4>CAP Minería</h4>
+          <div class="caso-meta">Compañía Minera del Pacífico · III Región</div>
+          <div class="caso-region">Región de Atacama</div>
+        </div>
+      </div>
+      <div class="caso-body">
+        <p class="caso-challenge">Desafío</p>
+        <p>CAP Minería requería controlar el acceso vehicular de más de 800 camiones y vehículos al día en el puerto de embarque y plantas de proceso, con registro automatizado de patentes y sincronización con el área de logística.</p>
+        <div class="caso-resultado"><span>✓ Resultado: Eliminación total de colas en portería, reduciendo el tiempo de ingreso promedio de 4 minutos a menos de 30 segundos.</span></div>
+        <div class="caso-products">
+          <span class="caso-product">LPRS1000</span>
+          <span class="caso-product">ProBG3060</span>
+          <span class="caso-product">ZKBio CVSecurity</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-header">
+        <div class="caso-avatar" style="background:#FCEBEB; color:#A32D2D;">SG</div>
+        <div>
+          <h4>Sierra Gorda SCM</h4>
+          <div class="caso-meta">Mina Sierra Gorda · II Región</div>
+          <div class="caso-region">Región de Antofagasta</div>
+        </div>
+      </div>
+      <div class="caso-body">
+        <p class="caso-challenge">Desafío</p>
+        <p>Con una dotación combinada de más de 5.000 personas entre operación y construcción, Sierra Gorda SCM necesitaba un sistema unificado de gestión de contratistas, control de acceso y asistencia compatible con múltiples empresas subcontratistas.</p>
+        <div class="caso-resultado"><span>✓ Resultado: Plataforma unificada con 38 empresas contratistas integradas y reportería automática para cumplimiento normativo SERNAGEOMIN.</span></div>
+        <div class="caso-products">
+          <span class="caso-product">SpeedFace V5L</span>
+          <span class="caso-product">FaceKiosk H13</span>
+          <span class="caso-product">ZKBioSecurity</span>
+          <span class="caso-product">Módulo visitantes</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="caso-card">
+      <div class="caso-header">
+        <div class="caso-avatar" style="background:#E6F1FB; color:#0C447C;">FM</div>
+        <div>
+          <h4>Freeport-McMoRan</h4>
+          <div class="caso-meta">El Abra Copper · II Región</div>
+          <div class="caso-region">Región de Antofagasta</div>
+        </div>
+      </div>
+      <div class="caso-body">
+        <p class="caso-challenge">Desafío</p>
+        <p>Las exigencias de seguridad corporativa de Freeport-McMoRan requerían implementar inspección de equipaje en puntos de control de acceso a planta, incluyendo detección de metales y scanner de rayos X para cumplir estándares internacionales.</p>
+        <div class="caso-resultado"><span>✓ Resultado: Certificación de cumplimiento ISO 45001 en materia de control de acceso obtenida dentro del primer año de operación del sistema.</span></div>
+        <div class="caso-products">
+          <span class="caso-product">ZKX5030C</span>
+          <span class="caso-product">ZK-D4330</span>
+          <span class="caso-product">MST150 Pro</span>
+          <span class="caso-product">ZK-D180</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROCESO / EMBUDO -->
+<section id="proceso" class="funnel-bg">
+  <div class="center">
+    <div class="section-tag-dark">Nuestro proceso</div>
+    <h2 class="section-title" style="color:white;">Así trabajamos <span style="color:#9FE1CB;">contigo</span></h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.6); margin:0 auto;">De la necesidad a la implementación en 4 pasos simples, con acompañamiento total de nuestro equipo especializado.</p>
+  </div>
+  <div class="funnel-steps">
+    <div class="funnel-step">
+      <div class="step-num" style="background:#1D9E75; color:white; border: 3px solid #9FE1CB;">1</div>
+      <h3>Diagnóstico</h3>
+      <p>Evaluamos tus instalaciones, riesgos y necesidades de seguridad de forma gratuita y sin compromiso.</p>
+    </div>
+    <div class="funnel-step">
+      <div class="step-num" style="background:#185FA5; color:white; border: 3px solid #85B7EB;">2</div>
+      <h3>Propuesta</h3>
+      <p>Diseñamos una solución personalizada con los equipos y software más adecuados para tu caso.</p>
+    </div>
+    <div class="funnel-step">
+      <div class="step-num" style="background:#854F0B; color:white; border: 3px solid #FAC775;">3</div>
+      <h3>Instalación</h3>
+      <p>Nuestro equipo técnico certificado instala y configura todos los equipos garantizando su correcto funcionamiento.</p>
+    </div>
+    <div class="funnel-step">
+      <div class="step-num" style="background:#3C3489; color:white; border: 3px solid #AFA9EC;">4</div>
+      <h3>Soporte continuo</h3>
+      <p>Brindamos capacitación, mantenimiento preventivo y soporte técnico especializado de manera permanente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIAS -->
+<section id="industrias">
+  <div class="center">
+    <div class="section-tag">Industrias</div>
+    <h2 class="section-title">Soluciones para <span class="highlight">cada sector</span></h2>
+    <p class="section-sub">Adaptamos nuestra tecnología biométrica a las necesidades específicas de cada industria.</p>
+  </div>
+  <div class="industry-grid">
+    <div class="industry-card">
+      <div class="industry-icon">🏭</div>
+      <h4>Manufactura e industria</h4>
+    </div>
+    <div class="industry-card">
+      <div class="industry-icon">🏢</div>
+      <h4>Corporativos y oficinas</h4>
+    </div>
+    <div class="industry-card">
+      <div class="industry-icon">🏫</div>
+      <h4>Educación</h4>
+    </div>
+    <div class="industry-card">
+      <div class="industry-icon">🏥</div>
+      <h4>Salud y hospitales</h4>
+    </div>
+    <div class="industry-card">
+      <div class="industry-icon">🛒</div>
+      <h4>Retail y centros comerciales</h4>
+    </div>
+    <div class="industry-card">
+      <div class="industry-icon">🏛</div>
+      <h4>Gobierno</h4>
+    </div>
+    <div class="industry-card">
+      <div class="industry-icon">🚗</div>
+      <h4>Automotriz</h4>
+    </div>
+    <div class="industry-card">
+      <div class="industry-icon">🏘</div>
+      <h4>Residencial</h4>
+    </div>
+    <div class="industry-card">
+      <div class="industry-icon">✈</div>
+      <h4>Aeropuertos y aduanas</h4>
+    </div>
+    <div class="industry-card">
+      <div class="industry-icon">🔋</div>
+      <h4>Energía y petróleo</h4>
+    </div>
+    <div class="industry-card">
+      <div class="industry-icon">🎢</div>
+      <h4>Entretenimiento</h4>
+    </div>
+    <div class="industry-card">
+      <div class="industry-icon">🚂</div>
+      <h4>Transporte público</h4>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TESTIMONIOS -->
+<section>
+  <div class="center">
+    <div class="section-tag">Testimonios</div>
+    <h2 class="section-title">La experiencia de <span class="highlight">nuestros clientes</span></h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <blockquote>"La implementación del sistema de reconocimiento facial en portería redujo drásticamente los tiempos de ingreso en el cambio de turno. SecuBio entendió desde el primer día las exigencias operacionales de una faena minera."</blockquote>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background:#E1F5EE; color:#0F6E56;">MV</div>
+        <div class="author-info">
+          <h5>Jefe de Seguridad Corporativa</h5>
+          <p>Operación minera · Región de Antofagasta</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <blockquote>"La integración con nuestro sistema SAP HR fue impecable. Por primera vez tenemos trazabilidad completa de la asistencia de contratistas y podemos generar los reportes que exige SERNAGEOMIN en forma automática."</blockquote>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background:#E6F1FB; color:#185FA5;">CR</div>
+        <div class="author-info">
+          <h5>Gerente de Recursos Humanos</h5>
+          <p>Gran minería del cobre · Chile</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Los equipos funcionan perfectamente en las condiciones climáticas extremas del norte de Chile. El soporte técnico de SecuBio responde con rapidez, incluso para operaciones ubicadas a más de 4.000 metros de altitud."</blockquote>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background:#FAEEDA; color:#854F0B;">PL</div>
+        <div class="author-info">
+          <h5>Superintendente de Operaciones</h5>
+          <p>Minería del litio · Salar de Atacama</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA + FORMULARIO -->
+<section id="contacto" class="cta-section">
+  <div class="cta-text">
+    <h2>¿Listo para proteger tu empresa?</h2>
+    <p>Solicita tu diagnóstico de seguridad gratuito. Nuestros especialistas analizarán tus necesidades y te presentarán la solución ideal en menos de 24 horas.</p>
+    <div class="cta-benefits">
+      <div class="cta-benefit"><div class="cta-benefit-dot"></div>Diagnóstico sin costo ni compromiso</div>
+      <div class="cta-benefit"><div class="cta-benefit-dot"></div>Propuesta personalizada en 24 horas</div>
+      <div class="cta-benefit"><div class="cta-benefit-dot"></div>Instalación por técnicos certificados</div>
+      <div class="cta-benefit"><div class="cta-benefit-dot"></div>Soporte técnico permanente incluido</div>
+      <div class="cta-benefit"><div class="cta-benefit-dot"></div>Garantía en todos los equipos</div>
+    </div>
+  </div>
+  <div class="contact-form">
+    <h3>Solicitar diagnóstico gratuito</h3>
+    <p>Completa el formulario y un especialista te contactará hoy mismo.</p>
+    <form action="https://formspree.io/f/xgopjwdv" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nombre completo *</label>
+          <input type="text" name="nombre" placeholder="Juan Pérez" required />
+        </div>
+        <div class="form-group">
+          <label>Empresa *</label>
+          <input type="text" name="empresa" placeholder="Mi empresa S.A." required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Teléfono *</label>
+          <input type="tel" name="telefono" placeholder="+56 9 1234 5678" required />
+        </div>
+        <div class="form-group">
+          <label>Email corporativo *</label>
+          <input type="email" name="email" placeholder="juan@empresa.cl" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>¿Qué solución te interesa?</label>
+        <select name="solucion">
+          <option value="">Selecciona una opción...</option>
+          <option>Control de acceso peatonal</option>
+          <option>Videovigilancia CCTV</option>
+          <option>Control de acceso vehicular</option>
+          <option>Control de asistencia</option>
+          <option>Inspección de seguridad</option>
+          <option>Solución integral</option>
+          <option>Otro / No sé aún</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Ciudad y región</label>
+        <input type="text" name="ciudad" placeholder="Santiago, Región Metropolitana" />
+      </div>
+      <div class="form-group">
+        <label>Cuéntanos sobre tu proyecto (opcional)</label>
+        <textarea name="mensaje" rows="3" placeholder="Número de accesos, tipo de instalación, necesidades específicas..."></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="Nuevo lead SecuBio Chile">
+      <input type="hidden" name="_next" value="https://www.secubio.cl/gracias">
+      <input type="text" name="_gotcha" style="display:none">
+      <button type="submit" class="submit-btn">Solicitar diagnóstico técnico →</button>
+      <p class="form-disclaimer">Al enviar este formulario aceptas nuestra política de privacidad. No spam, solo te contactamos para atender tu solicitud.</p>
+    </form>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section>
+  <div class="center">
+    <div class="section-tag">Preguntas frecuentes</div>
+    <h2 class="section-title">Todo lo que necesitas <span class="highlight">saber</span></h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿Cuánto tiempo tarda la instalación de un sistema de control de acceso?</div>
+      <div class="faq-a">Depende de la complejidad del proyecto. Una instalación básica para una empresa mediana puede completarse en 1 a 3 días hábiles. Proyectos más grandes, como instalaciones en múltiples sitios o integración con sistemas existentes, pueden tomar de 1 a 3 semanas. Siempre entregamos un cronograma detallado antes de comenzar.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿Los equipos funcionan sin conexión a internet?</div>
+      <div class="faq-a">Sí. La mayoría de nuestros dispositivos pueden operar de forma autónoma y almacenan los datos localmente. La conexión a red o internet es necesaria para la sincronización central, reportes en tiempo real y la gestión remota desde el software ZKBioSecurity, pero el acceso básico no se ve interrumpido si hay fallas de conectividad.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿Puedo integrar el sistema con mi software de nómina actual?</div>
+      <div class="faq-a">Absolutamente. El software BioTime y ZKBioSecurity ofrecen exportación de datos en múltiples formatos (Excel, CSV, TXT, XML) compatibles con los principales sistemas de nómina del mercado. También disponemos de Push SDK y APIs para integraciones personalizadas con sistemas ERP.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿Qué pasa si un equipo falla? ¿Tienen garantía?</div>
+      <div class="faq-a">Todos nuestros equipos cuentan con garantía del fabricante y soporte técnico especializado. Ofrecemos contratos de mantenimiento preventivo y correctivo con tiempos de respuesta garantizados según el nivel de criticidad de tu instalación. Contamos con stock de refacciones para minimizar tiempos de inactividad.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿El reconocimiento facial funciona con cubrebocas o lentes?</div>
+      <div class="faq-a">Los equipos de última generación como el SpeedFace V5L están diseñados para reconocer rostros parcialmente cubiertos con cubrebocas, con tasas de precisión superiores al 99%. Para condiciones especiales como lentes de sol o condiciones de baja iluminación, recomendamos equipos específicos durante el diagnóstico.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">¿Ofrecen financiamiento o esquemas de renta?</div>
+      <div class="faq-a">Sí, contamos con esquemas flexibles de pago, incluyendo venta directa, arrendamiento operativo y financiamiento a plazos. Durante la consulta inicial podemos analizar cuál es la mejor opción según el tamaño de tu proyecto y presupuesto disponible.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo-text">Secu<span>Bio</span></div>
+      <p>Distribuidor oficial de soluciones ZKTeco para Chile y Latinoamérica. Seguridad biométrica inteligente desde 2009.</p>
+    </div>
+    <div>
+      <h5>Soluciones</h5>
+      <ul>
+        <li><a href="#soluciones">Control de acceso</a></li>
+        <li><a href="#soluciones">Videovigilancia</a></li>
+        <li><a href="#soluciones">Acceso vehicular</a></li>
+        <li><a href="#soluciones">Control de asistencia</a></li>
+        <li><a href="#soluciones">Inspección de seguridad</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Empresa</h5>
+      <ul>
+        <li><a href="#">Acerca de SecuBio</a></li>
+        <li><a href="#casos">Casos de éxito</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Soporte</h5>
+      <ul>
+        <li><a href="#">Centro de ayuda</a></li>
+        <li><a href="#">Documentación</a></li>
+        <li><a href="#">Garantías</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Aviso legal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 SecuBio. Todos los derechos reservados.</span>
+    <span>Tecnología ZKTeco · ISO 9000 Certificado</span>
+  </div>
+</footer>
+
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tech-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.querySelectorAll('.tech-tab-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+
+function toggleFaq(el) {
+  el.classList.toggle('open');
+  var answer = el.nextElementSibling;
+  answer.classList.toggle('visible');
+}
+
+<!-- Elimina la función JS handleSubmit del <script> al final ya que Formspree maneja el envío directamente. 
+function handleSubmit(e) {
+  e.preventDefault();
+  var btn = e.target.querySelector('.submit-btn');
+  btn.textContent = '✓ Solicitud enviada – Te contactamos en breve';
+  btn.style.background = '#085041';
+  btn.disabled = true;
+}
+-->
+document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
