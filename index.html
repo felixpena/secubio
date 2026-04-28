@@ -533,6 +533,33 @@
   .submit-btn:hover { background: var(--green-dark); }
   .form-disclaimer { font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 10px; }
 
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 32px 16px;
+  }
+  .form-success-icon {
+    width: 56px; height: 56px;
+    background: var(--green-light);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+  }
+  .form-success-icon svg { width: 28px; height: 28px; stroke: var(--green-dark); fill: none; stroke-width: 2.5; }
+  .form-success h4 { font-size: 18px; font-weight: 800; color: var(--text); margin-bottom: 8px; }
+  .form-success p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+  .form-error-msg {
+    display: none;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: var(--radius-sm);
+    color: #b91c1c;
+    font-size: 13px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
   /* TESTIMONIOS */
   .testimonials-grid {
     display: grid;
@@ -1170,7 +1197,7 @@
   <div class="contact-form">
     <h3>Solicitar diagnóstico gratuito</h3>
     <p>Completa el formulario y un especialista te contactará hoy mismo.</p>
-    <form action="https://formspree.io/f/xgopjwdv" method="POST">
+    <form id="contact-form" action="https://formspree.io/f/xgopjwdv" method="POST">
       <div class="form-row">
         <div class="form-group">
           <label>Nombre completo *</label>
@@ -1213,11 +1240,18 @@
         <textarea name="mensaje" rows="3" placeholder="Número de accesos, tipo de instalación, necesidades específicas..."></textarea>
       </div>
       <input type="hidden" name="_subject" value="Nuevo lead SecuBio Chile">
-      <input type="hidden" name="_next" value="https://www.secubio.xyz/gracias">
       <input type="text" name="_gotcha" style="display:none">
       <button type="submit" class="submit-btn">Solicitar diagnóstico técnico →</button>
       <p class="form-disclaimer">Al enviar este formulario aceptas nuestra política de privacidad. No spam, solo te contactamos para atender tu solicitud.</p>
+      <div class="form-error-msg" id="form-error">Hubo un problema al enviar tu solicitud. Por favor inténtalo de nuevo o escríbenos directamente.</div>
     </form>
+    <div class="form-success" id="form-success">
+      <div class="form-success-icon">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h4>¡Solicitud recibida!</h4>
+      <p>Un especialista de SecuBio te contactará en menos de 24 horas hábiles para coordinar tu diagnóstico gratuito.</p>
+    </div>
   </div>
 </section>
 
@@ -1313,6 +1347,34 @@ function toggleFaq(el) {
   var answer = el.nextElementSibling;
   answer.classList.toggle('visible');
 }
+
+var form = document.getElementById('contact-form');
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  var btn = form.querySelector('.submit-btn');
+  var errorMsg = document.getElementById('form-error');
+  btn.textContent = 'Enviando...';
+  btn.disabled = true;
+  errorMsg.style.display = 'none';
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(function(res) {
+    if (res.ok) {
+      form.style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    } else {
+      btn.textContent = 'Solicitar diagnóstico técnico →';
+      btn.disabled = false;
+      errorMsg.style.display = 'block';
+    }
+  }).catch(function() {
+    btn.textContent = 'Solicitar diagnóstico técnico →';
+    btn.disabled = false;
+    errorMsg.style.display = 'block';
+  });
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(function(a) {
   a.addEventListener('click', function(e) {
